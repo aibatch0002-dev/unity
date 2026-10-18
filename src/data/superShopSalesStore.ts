@@ -1,6 +1,6 @@
 import { SuperShopSaleOrder, SuperShopSaleItem } from '../types';
 
-const STORAGE_KEY = 'ugg_supershop_sales_orders_v2';
+const STORAGE_KEY = 'ugg_supershop_sales_orders_v3';
 
 // Helper to construct realistic dates based on current time
 const getPastDate = (daysAgo: number, hoursAgo = 0, minutesAgo = 0): string => {
@@ -16,8 +16,8 @@ const getSeedOrders = (): SuperShopSaleOrder[] => [
   {
     id: 'ord-today-1',
     orderNumber: 'UGG-84201',
-    customerName: 'তানভীর আহমেদ',
-    customerPhone: '01711-234567',
+    customerName: 'রহিদুল ইসলাম',
+    customerPhone: '01700 000000',
     deliveryAddress: 'হাউস #১২, রোড #৪, সেক্টর #৩, উত্তরা, ঢাকা',
     channel: 'online',
     items: [
@@ -35,8 +35,8 @@ const getSeedOrders = (): SuperShopSaleOrder[] => [
   {
     id: 'ord-today-2',
     orderNumber: 'UGG-84202',
-    customerName: 'রাশেদ খান',
-    customerPhone: '01819-987654',
+    customerName: 'রহিদুল ইসলাম',
+    customerPhone: '01700 000000',
     deliveryAddress: 'উপশহর মেইন রোড, রাজশাহী',
     channel: 'counter-pos',
     items: [
@@ -54,8 +54,8 @@ const getSeedOrders = (): SuperShopSaleOrder[] => [
   {
     id: 'ord-today-3',
     orderNumber: 'UGG-84203',
-    customerName: 'ড. রেহনুমা ফেরদৌস',
-    customerPhone: '01912-345678',
+    customerName: 'রহিদুল ইসলাম',
+    customerPhone: '01700 000000',
     deliveryAddress: 'প্লট #৪৫, ধানমন্ডি আ/এ, ঢাকা',
     channel: 'online',
     items: [
@@ -74,8 +74,8 @@ const getSeedOrders = (): SuperShopSaleOrder[] => [
   {
     id: 'ord-today-4',
     orderNumber: 'UGG-84204',
-    customerName: 'মো: শরিফুল আলম',
-    customerPhone: '01715-443322',
+    customerName: 'রহিদুল ইসলাম',
+    customerPhone: '01700 000000',
     deliveryAddress: 'কাউন্টার সরাসরি বিক্রয়',
     channel: 'counter-pos',
     items: [
@@ -94,8 +94,8 @@ const getSeedOrders = (): SuperShopSaleOrder[] => [
   {
     id: 'ord-month-1',
     orderNumber: 'UGG-83950',
-    customerName: 'ফারহানা ইসলাম',
-    customerPhone: '01678-112233',
+    customerName: 'রহিদুল ইসলাম',
+    customerPhone: '01700 000000',
     deliveryAddress: 'বনানী ডিওএইচএস, ঢাকা',
     channel: 'online',
     items: [
@@ -113,8 +113,8 @@ const getSeedOrders = (): SuperShopSaleOrder[] => [
   {
     id: 'ord-month-2',
     orderNumber: 'UGG-83812',
-    customerName: 'প্রকৌশলী মশিউর রহমান',
-    customerPhone: '01712-998877',
+    customerName: 'রহিদুল ইসলাম',
+    customerPhone: '01700 000000',
     deliveryAddress: 'কাজলা, রাজশাহী',
     channel: 'counter-pos',
     items: [
@@ -131,8 +131,8 @@ const getSeedOrders = (): SuperShopSaleOrder[] => [
   {
     id: 'ord-month-3',
     orderNumber: 'UGG-83640',
-    customerName: 'মো: জাহিদুল করিম',
-    customerPhone: '01844-556677',
+    customerName: 'রহিদুল ইসলাম',
+    customerPhone: '01700 000000',
     deliveryAddress: 'উত্তরা সেক্টর ৭, ঢাকা',
     channel: 'online',
     items: [
@@ -150,8 +150,8 @@ const getSeedOrders = (): SuperShopSaleOrder[] => [
   {
     id: 'ord-month-4',
     orderNumber: 'UGG-83490',
-    customerName: 'সুলতানা পারভীন',
-    customerPhone: '01911-002233',
+    customerName: 'রহিদুল ইসলাম',
+    customerPhone: '01700 000000',
     deliveryAddress: 'মিরপুর ডিওএইচএস, ঢাকা',
     channel: 'online',
     items: [
@@ -171,8 +171,8 @@ const getSeedOrders = (): SuperShopSaleOrder[] => [
   {
     id: 'ord-year-1',
     orderNumber: 'UGG-81200',
-    customerName: 'গ্রোথ হোল্ডিংস কর্পোরেট বাল্ক অর্ডার',
-    customerPhone: '01711-000111',
+    customerName: 'রহিদুল ইসলাম (বাল্ক কর্পোরেট অর্ডার)',
+    customerPhone: '01700 000000',
     deliveryAddress: 'মতিঝিল বাণিজ্যিক এলাকা, ঢাকা',
     channel: 'counter-pos',
     items: [
@@ -190,8 +190,8 @@ const getSeedOrders = (): SuperShopSaleOrder[] => [
   {
     id: 'ord-year-2',
     orderNumber: 'UGG-79520',
-    customerName: 'নর্থওয়েস্ট ক্যাটারিং সার্ভিস',
-    customerPhone: '01819-223344',
+    customerName: 'রহিদুল ইসলাম (ক্যাটারিং সার্ভিস)',
+    customerPhone: '01700 000000',
     deliveryAddress: 'গ্রেটার রোড, রাজশাহী',
     channel: 'counter-pos',
     items: [
@@ -209,8 +209,8 @@ const getSeedOrders = (): SuperShopSaleOrder[] => [
   {
     id: 'ord-year-3',
     orderNumber: 'UGG-76340',
-    customerName: 'ইউজিজি ডায়াসপোরা ইনভেস্টরস ফেস্ট কনসোর্টিয়াম',
-    customerPhone: '01914-887766',
+    customerName: 'রহিদুল ইসলাম (ইনভেস্টরস ফেস্ট)',
+    customerPhone: '01700 000000',
     deliveryAddress: 'গুলশান ক্লাস্টিক এভিনিউ, ঢাকা',
     channel: 'online',
     items: [
@@ -228,8 +228,8 @@ const getSeedOrders = (): SuperShopSaleOrder[] => [
   {
     id: 'ord-year-4',
     orderNumber: 'UGG-72100',
-    customerName: 'রাজশাহী মেডিকেল কনফারেন্স ইভেন্ট',
-    customerPhone: '01713-556677',
+    customerName: 'রহিদুল ইসলাম (ইভেন্ট ডেলিভারি)',
+    customerPhone: '01700 000000',
     deliveryAddress: 'লক্ষ্মীপুর, রাজশাহী',
     channel: 'counter-pos',
     items: [
@@ -249,8 +249,8 @@ const getSeedOrders = (): SuperShopSaleOrder[] => [
   {
     id: 'ord-prev-1',
     orderNumber: 'UGG-65100',
-    customerName: 'বার্ষিক সমবায় এক্সপো ও রিটেইল বুথ ২০২৫',
-    customerPhone: '01711-999000',
+    customerName: 'রহিদুল ইসলাম (রিটেইল আউটলেট)',
+    customerPhone: '01700 000000',
     deliveryAddress: 'বঙ্গবন্ধু আন্তর্জাতিক সম্মেলন কেন্দ্র, ঢাকা',
     channel: 'counter-pos',
     items: [
@@ -390,7 +390,7 @@ export function recordNewSaleOrder(orderData: {
     id: 'ord-' + Date.now() + '-' + Math.random().toString(36).substring(2, 6),
     orderNumber: orderData.orderNumber || `UGG-${rawId}`,
     customerName: orderData.customerName || 'সম্মানিত ক্রেতা',
-    customerPhone: orderData.customerPhone || '01700-000000',
+    customerPhone: orderData.customerPhone || '01700 000000',
     deliveryAddress: orderData.deliveryAddress || 'সুপার শপ কাউন্টার ডেলিভারি',
     channel: orderData.channel,
     items: orderData.items,

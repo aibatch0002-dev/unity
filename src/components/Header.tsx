@@ -42,7 +42,7 @@ export const Header: React.FC<HeaderProps> = ({
           <div className="flex items-center gap-3">
             <span className="flex items-center gap-1.5 text-[#b7c7eb]">
               <span className="material-symbols-outlined text-[15px]">support_agent</span>
-              <span>{language === 'bn' ? 'হেল্পলাইন: +৮৮০ ১৭৩৮-১১৪১০১' : 'Helpline: +880 1738-114101'}</span>
+              <span>{language === 'bn' ? 'হেল্পলাইন: 01700 000000' : 'Helpline: 01700 000000'}</span>
             </span>
             <span className="hidden md:inline-block text-[#c5c6ce]/40">|</span>
             <span className="hidden md:inline-block text-[#7786a8] font-normal tracking-wide">
@@ -120,7 +120,8 @@ export const Header: React.FC<HeaderProps> = ({
           <img
             src={UGG_LOGO_URL}
             alt="UNITY GROWTH GROUP Official Logo"
-            className="h-9 sm:h-10 w-auto object-contain transition-transform group-hover:scale-105"
+            className="h-10 sm:h-11 w-10 sm:w-11 rounded-full shadow-sm object-cover transition-transform group-hover:scale-105 border border-amber-400/40"
+            referrerPolicy="no-referrer"
           />
           <div className="flex flex-col justify-center">
             <span className="font-serif text-lg sm:text-xl font-bold tracking-tight text-[#000514] leading-tight">

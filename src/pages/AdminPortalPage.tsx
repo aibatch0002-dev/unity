@@ -17,9 +17,9 @@ export const AdminPortalPage: React.FC<AdminPortalPageProps> = ({
   const [pendingApplicants, setPendingApplicants] = useState([
     {
       id: 'APP-2025-089',
-      nameBn: 'মোঃ রাশেদুল করিম',
-      nameEn: 'Md. Rashedul Karim',
-      phone: '01712-334455',
+      nameBn: 'রহিদুল ইসলাম',
+      nameEn: 'Rohidul Islam',
+      phone: '01700 000000',
       categoryBn: 'সাধারণ সদস্য (General)',
       categoryEn: 'General Member',
       shares: 10,
@@ -27,15 +27,14 @@ export const AdminPortalPage: React.FC<AdminPortalPageProps> = ({
       capitalEn: '৳100,000',
       dateBn: '১১ মিনিট পূর্বে',
       dateEn: '11 mins ago',
-      nid: '8872190342',
       statusBn: 'অপেক্ষমাণ',
       statusEn: 'Pending Review',
     },
     {
       id: 'APP-2025-088',
-      nameBn: 'ফারহানা ইয়াসমিন',
-      nameEn: 'Farhana Yasmin',
-      phone: '01911-556677',
+      nameBn: 'রহিদুল ইসলাম',
+      nameEn: 'Rohidul Islam',
+      phone: '01700 000000',
       categoryBn: 'আজীবন সদস্য (Life)',
       categoryEn: 'Life Member',
       shares: 25,
@@ -43,15 +42,14 @@ export const AdminPortalPage: React.FC<AdminPortalPageProps> = ({
       capitalEn: '৳250,000',
       dateBn: '২ ঘণ্টা পূর্বে',
       dateEn: '2 hours ago',
-      nid: '4451209381',
       statusBn: 'অপেক্ষমাণ',
       statusEn: 'Pending Review',
     },
     {
       id: 'APP-2025-087',
-      nameBn: 'ড. মাহমুদ আহমেদ',
-      nameEn: 'Dr. Mahmud Ahmed',
-      phone: '01819-223344',
+      nameBn: 'রহিদুল ইসলাম',
+      nameEn: 'Rohidul Islam',
+      phone: '01700 000000',
       categoryBn: 'প্রতিষ্ঠাতা সহযোগী (Founder Tier)',
       categoryEn: 'Founder Tier Partner',
       shares: 50,
@@ -59,7 +57,6 @@ export const AdminPortalPage: React.FC<AdminPortalPageProps> = ({
       capitalEn: '৳500,000',
       dateBn: 'গতকাল',
       dateEn: 'Yesterday',
-      nid: '9982310456',
       statusBn: 'অপেক্ষমাণ',
       statusEn: 'Pending Review',
     },
@@ -69,8 +66,8 @@ export const AdminPortalPage: React.FC<AdminPortalPageProps> = ({
     {
       id: 'SLIP-9901',
       memberCode: 'UGG-M-1033',
-      nameBn: 'শাহনেওয়াজ চৌধুরী',
-      nameEn: 'Shahnewaz Chowdhury',
+      nameBn: 'রহিদুল ইসলাম',
+      nameEn: 'Rohidul Islam',
       bank: 'BRAC Bank PLC',
       trxId: 'TXN-7788192',
       amountBn: '৳২,৫০,০০০',
@@ -83,8 +80,8 @@ export const AdminPortalPage: React.FC<AdminPortalPageProps> = ({
     {
       id: 'SLIP-9902',
       memberCode: 'UGG-M-1019',
-      nameBn: 'মো: রফিকুল ইসলাম',
-      nameEn: 'Md. Rafiqul Islam',
+      nameBn: 'রহিদুল ইসলাম',
+      nameEn: 'Rohidul Islam',
       bank: 'Islami Bank Bangladesh PLC',
       trxId: 'TXN-9912044',
       amountBn: '৳১,০০,০০০',
@@ -352,7 +349,6 @@ export const AdminPortalPage: React.FC<AdminPortalPageProps> = ({
                       </div>
                       <div className="flex flex-wrap items-center gap-4 text-xs text-slate-400 font-mono pt-1">
                         <span>📞 {app.phone}</span>
-                        <span>🪪 NID: {app.nid}</span>
                         <span>
                           📈 {isBn ? `${toBanglaNumber(app.shares)} টি শেয়ার` : `${app.shares} Shares`} ({isBn ? app.capitalBn : app.capitalEn})
                         </span>

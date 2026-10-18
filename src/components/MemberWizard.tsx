@@ -32,10 +32,10 @@ export const MemberWizard: React.FC<MemberWizardProps> = ({ language, onComplete
     membershipCategory: 'life',
     nomineeName: '',
     nomineeRelation: '',
-    nomineeNid: '',
+    nomineePhone: '',
     nomineeShare: '100',
     referenceId: '',
-    nidNumber: '',
+    passportOrBirthReg: '',
     docFileName: '',
     agreed1: false,
     agreed2: false,
@@ -83,7 +83,7 @@ export const MemberWizard: React.FC<MemberWizardProps> = ({ language, onComplete
     'যোগাযোগ ও ঠিকানা',
     'ক্যাটাগরি নির্বাচন',
     'নমিনী ও তথ্য',
-    'রেফারেন্স ও দলিল',
+    'রেফারেন্স ও সুপারিশ',
     'ঘোষণা ও সমাপ্তি',
   ];
 
@@ -93,7 +93,7 @@ export const MemberWizard: React.FC<MemberWizardProps> = ({ language, onComplete
     'Contact',
     'Category',
     'Nominee',
-    'Documents',
+    'Referral',
     'Declaration',
   ];
 
@@ -230,8 +230,8 @@ export const MemberWizard: React.FC<MemberWizardProps> = ({ language, onComplete
                 </h3>
                 <p className="text-xs text-[#75777e] mt-0.5">
                   {isBn
-                    ? 'জাতীয় পরিচয়পত্র বা পাসপোর্টের বিবরণ অনুযায়ী নির্ভুলভাবে পূরণ করুন।'
-                    : 'Fill accurately as per your official NID or Passport.'}
+                    ? 'আপনার প্রাতিষ্ঠানিক বিবরণ অনুযায়ী নির্ভুলভাবে পূরণ করুন।'
+                    : 'Fill accurately as per your official records.'}
                 </p>
               </div>
               <span className="text-xs bg-[#ffe08b] text-[#735a00] font-bold px-3 py-1 rounded font-mono">
@@ -249,21 +249,21 @@ export const MemberWizard: React.FC<MemberWizardProps> = ({ language, onComplete
                   required
                   value={formData.nameBn}
                   onChange={(e) => setFormData({ ...formData, nameBn: e.target.value })}
-                  placeholder={isBn ? 'উদাহরণ: মোঃ হাফিজুর রহমান' : 'Example: মোঃ হাফিজুর রহমান'}
+                  placeholder={isBn ? 'উদাহরণ: রহিদুল ইসলাম' : 'Example: রহিদুল ইসলাম'}
                   className="px-4 py-3 bg-[#f2f3ff] rounded text-sm text-[#131b2e] focus:outline-none focus:bg-[#eaedff]"
                 />
               </div>
 
               <div className="flex flex-col gap-1.5">
                 <label className="text-xs font-bold text-[#131b2e]">
-                  {isBn ? 'পূর্ণ নাম (ইংরেজিতে NID/Passport অনুযায়ী)' : 'Full Name (English as per NID/Passport)'} <span className="text-red-500">*</span>
+                  {isBn ? 'পূর্ণ নাম (ইংরেজিতে)' : 'Full Name (in English)'} <span className="text-red-500">*</span>
                 </label>
                 <input
                   type="text"
                   required
                   value={formData.nameEn}
                   onChange={(e) => setFormData({ ...formData, nameEn: e.target.value })}
-                  placeholder="Example: Md. Hafizur Rahman"
+                  placeholder="Example: Rohidul Islam"
                   className="px-4 py-3 bg-[#f2f3ff] rounded text-sm text-[#131b2e] focus:outline-none focus:bg-[#eaedff]"
                 />
               </div>
@@ -313,12 +313,12 @@ export const MemberWizard: React.FC<MemberWizardProps> = ({ language, onComplete
                 </div>
                 <div className="flex flex-col gap-1 flex-grow text-center sm:text-left">
                   <span className="text-sm font-bold text-[#131b2e]">
-                    {isBn ? 'আনুষ্ঠানিক পাসপোর্ট সাইজ ছবি আপলোড করুন' : 'Upload Official Passport-Size Photograph'}
+                    {isBn ? 'আনুষ্ঠানিক প্রোফাইল ছবি আপলোড করুন' : 'Upload Official Profile Photograph'}
                   </span>
                   <span className="text-xs text-[#75777e]">
                     {isBn
-                      ? 'পাসপোর্ট সাইজ রঙিন ছবি (সর্বোচ্চ ৩ মেগাবাইট, JPG/PNG ফরম্যাট)। পরিষ্কার ব্যাকগ্রাউন্ড আবশ্যক।'
-                      : 'Color portrait photo (Max 3MB, JPG/PNG). High resolution with neutral background.'}
+                      ? 'আনুষ্ঠানিক রঙিন ছবি (সর্বোচ্চ ৩ মেগাবাইট, JPG/PNG ফরম্যাট)। পরিষ্কার ব্যাকগ্রাউন্ড আবশ্যক।'
+                      : 'Formal portrait photo (Max 3MB, JPG/PNG). High resolution with neutral background.'}
                   </span>
                   <div className="pt-2">
                     <label className="inline-flex items-center gap-2 px-4 py-2 bg-[#000514] text-white text-xs font-bold rounded cursor-pointer hover:bg-[#0d1e3a] transition-colors shadow-sm">
@@ -457,7 +457,7 @@ export const MemberWizard: React.FC<MemberWizardProps> = ({ language, onComplete
                   type="tel"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  placeholder="+880 1XXXXXXXXX"
+                  placeholder="01700 000000"
                   className="px-4 py-3 bg-[#f2f3ff] rounded text-sm text-[#131b2e] focus:outline-none focus:bg-[#eaedff] font-mono"
                 />
               </div>
@@ -490,7 +490,7 @@ export const MemberWizard: React.FC<MemberWizardProps> = ({ language, onComplete
 
               <div className="md:col-span-2 flex flex-col gap-1.5">
                 <label className="text-xs font-bold text-[#131b2e]">
-                  {isBn ? 'স্থায়ী ঠিকানা (জাতীয় পরিচয়পত্র অনুযায়ী)' : 'Permanent Address (As per NID)'} <span className="text-red-500">*</span>
+                  {isBn ? 'স্থায়ী ঠিকানা' : 'Permanent Address'} <span className="text-red-500">*</span>
                 </label>
                 <input
                   type="text"
@@ -687,13 +687,13 @@ export const MemberWizard: React.FC<MemberWizardProps> = ({ language, onComplete
 
               <div className="flex flex-col gap-1.5">
                 <label className="text-xs font-bold text-[#131b2e]">
-                  {isBn ? 'নমিনীর জাতীয় পরিচয়পত্র / জন্মনিবন্ধন নম্বর' : "Nominee's NID / Birth Certificate No"} <span className="text-red-500">*</span>
+                  {isBn ? 'নমিনীর মোবাইল নম্বর (ঐচ্ছিক)' : "Nominee's Mobile Number (Optional)"}
                 </label>
                 <input
-                  type="text"
-                  value={formData.nomineeNid}
-                  onChange={(e) => setFormData({ ...formData, nomineeNid: e.target.value })}
-                  placeholder={isBn ? 'NID বা জন্মনিবন্ধন নম্বর' : '10 or 17-digit National ID / Birth Reg'}
+                  type="tel"
+                  value={formData.nomineePhone}
+                  onChange={(e) => setFormData({ ...formData, nomineePhone: e.target.value })}
+                  placeholder="01700 000000"
                   className="px-4 py-3 bg-[#f2f3ff] rounded text-sm text-[#131b2e] focus:outline-none focus:bg-[#eaedff] font-mono"
                 />
               </div>
@@ -715,16 +715,16 @@ export const MemberWizard: React.FC<MemberWizardProps> = ({ language, onComplete
           </div>
         )}
 
-        {/* STEP 6: References & Verification Documents */}
+        {/* STEP 6: References & Recommendation */}
         {currentStep === 6 && (
           <div className="flex flex-col gap-6 animate-in fade-in">
             <div className="flex items-center justify-between pb-4 border-b border-[#eaedff]">
               <div>
                 <h3 className="font-serif text-lg md:text-xl text-[#000514] font-bold">
-                  {isBn ? 'ধাপ ৬: রেফারেন্স কোড ও জাতীয় পরিচয়পত্র আপলোড' : 'Step 6: Referral Code & Document Verification'}
+                  {isBn ? 'ধাপ ৬: রেফারেন্স কোড ও সুপারিশ' : 'Step 6: Referral Code & Recommendation'}
                 </h3>
                 <p className="text-xs text-[#75777e] mt-0.5">
-                  {isBn ? 'ইউজিজি-এর বর্তমান কোনো সদস্যের রেফারেন্স থাকলে তার কোড যুক্ত করুন।' : 'Add existing member recommendation and upload identity documents.'}
+                  {isBn ? 'ইউজিজি-এর বর্তমান কোনো সদস্যের রেফারেন্স থাকলে তার কোড যুক্ত করুন।' : 'Add existing member recommendation or referral code.'}
                 </p>
               </div>
               <span className="text-xs bg-[#ffe08b] text-[#735a00] font-bold px-3 py-1 rounded font-mono">
@@ -733,7 +733,7 @@ export const MemberWizard: React.FC<MemberWizardProps> = ({ language, onComplete
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-              <div className="flex flex-col gap-1.5">
+              <div className="md:col-span-2 flex flex-col gap-1.5">
                 <label className="text-xs font-bold text-[#131b2e]">
                   {isBn ? 'রেফারেন্স প্রদানকারী সদস্যের আইডি (ঐচ্ছিক)' : 'Referring Member ID (Optional)'}
                 </label>
@@ -745,44 +745,54 @@ export const MemberWizard: React.FC<MemberWizardProps> = ({ language, onComplete
                   className="px-4 py-3 bg-[#f2f3ff] rounded text-sm text-[#131b2e] focus:outline-none focus:bg-[#eaedff] font-mono"
                 />
                 <span className="text-[11px] text-[#75777e]">
-                  {isBn ? 'সরাসরি পরিচালকমণ্ডলী কর্তৃক রেফারকৃত হলে অগ্রাধিকার ভিত্তিতে অনুমোদিত হবে।' : 'Priority processing applies to candidates backed by founding board members.'}
+                  {isBn ? 'সরাসরি পরিচালকমণ্ডলী বা বিদ্যমান সদস্য কর্তৃক রেফারকৃত হলে অগ্রাধিকার ভিত্তিতে আবেদন প্রক্রিয়া হবে।' : 'Priority processing applies to candidates backed by members or founding board.'}
                 </span>
               </div>
 
-              <div className="flex flex-col gap-1.5">
-                <label className="text-xs font-bold text-[#131b2e]">
-                  {isBn ? 'আবেদনকারীর NID নম্বর (গোপনীয় থাকবে)' : 'Applicant NID Number (Secure & Encrypted)'} <span className="text-red-500">*</span>
-                </label>
+              {/* NID / Passport / Birth Registration Number (Optional) Field & Notice */}
+              <div className="md:col-span-2 flex flex-col gap-2.5 p-5 bg-[#f8fafc] rounded-xl border border-slate-200 shadow-sm">
+                <div className="flex items-center justify-between">
+                  <label className="text-xs font-bold text-[#131b2e] flex items-center gap-2">
+                    <span className="material-symbols-outlined text-[#003ea8] text-[18px]">badge</span>
+                    <span>
+                      {isBn ? 'এনআইডি / পাসপোর্ট / জন্ম নিবন্ধন নম্বর (ঐচ্ছিক)' : 'NID / Passport / Birth Registration Number (Optional)'}
+                    </span>
+                  </label>
+                  <span className="text-[11px] font-bold px-2.5 py-0.5 bg-amber-100 text-amber-900 border border-amber-300 rounded-full font-mono">
+                    {isBn ? 'ঐচ্ছিক হিসেবে বিবেচিত' : 'Optional Field'}
+                  </span>
+                </div>
+
                 <input
                   type="text"
-                  value={formData.nidNumber}
-                  onChange={(e) => setFormData({ ...formData, nidNumber: e.target.value })}
-                  placeholder={isBn ? '১০ বা ১৭ ডিজিটের এনআইডি নম্বর' : '10 or 17 digit NID number'}
-                  className="px-4 py-3 bg-[#f2f3ff] rounded text-sm text-[#131b2e] focus:outline-none focus:bg-[#eaedff] font-mono"
+                  value={formData.passportOrBirthReg}
+                  onChange={(e) => setFormData({ ...formData, passportOrBirthReg: e.target.value })}
+                  placeholder={
+                    isBn
+                      ? 'জাতীয় পরিচয়পত্র (NID) নম্বর / পাসপোর্ট / জন্ম নিবন্ধন নম্বর লিখুন (ঐচ্ছিক)'
+                      : 'Enter NID / Passport / Birth Registration number (optional)'
+                  }
+                  className="px-4 py-3 bg-white border border-slate-300 rounded text-sm text-[#131b2e] focus:outline-none focus:border-[#003ea8] focus:ring-1 focus:ring-[#003ea8] font-mono placeholder:text-slate-400"
                 />
-              </div>
 
-              <div className="md:col-span-2 p-6 bg-[#f2f3ff] rounded-xl flex flex-col sm:flex-row items-center justify-between gap-4 border border-[#eaedff]">
-                <div className="flex items-center gap-4">
-                  <span className="material-symbols-outlined text-[32px] text-[#000514]">badge</span>
+                {/* Assurance & Convenience Notice */}
+                <div className="mt-2 p-4 bg-emerald-50 rounded-lg flex items-start gap-3 border border-emerald-200">
+                  <div className="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="material-symbols-outlined text-[18px]">verified_user</span>
+                  </div>
                   <div>
-                    <span className="text-sm font-bold text-[#131b2e]">
-                      {isBn ? 'জাতীয় পরিচয়পত্র / পাসপোর্ট স্ক্যান কপি' : 'Official NID / Passport Scanned Copy'}
-                    </span>
-                    <p className="text-xs text-[#75777e]">
-                      {formData.docFileName
-                        ? `${isBn ? 'আপলোডকৃত:' : 'Uploaded:'} ${formData.docFileName}`
-                        : isBn
-                        ? 'উভয় পৃষ্ঠার স্পষ্ট স্ক্যান অথবা পিডিএফ ফাইল (সর্বোচ্চ ৫ মেগাবাইট)'
-                        : 'Both sides scan or PDF document (Max 5MB)'}
+                    <h4 className="text-xs font-bold text-emerald-950">
+                      {isBn
+                        ? 'সহজ ও নিরাপদ নিবন্ধন — কোনো এনআইডি, পাসপোর্ট বা জন্ম নিবন্ধন লাগবে না'
+                        : 'Hassle-Free & Secure — No NID, Passport or Birth Registration Required'}
+                    </h4>
+                    <p className="text-[12px] text-emerald-800 mt-1 leading-relaxed">
+                      {isBn
+                        ? 'আমাদের প্ল্যাটফর্মে জাতীয় পরিচয়পত্র (NID), পাসপোর্ট কিংবা জন্ম নিবন্ধন সংক্রান্ত কোনো নথিপত্র বা নম্বরের বাধ্যবাধকতা নেই। আপনার মৌলিক তথ্যাবলি এবং মোবাইল যোগাযোগের ভিত্তিতেই পরিচালনা পর্ষদ সদস্যপদ প্রক্রিয়া সম্পন্ন করবে।'
+                        : 'Our platform strictly requires no National ID (NID), passport, or birth registration documents. Membership enrollment is processed smoothly through your basic credentials and direct contact verification.'}
                     </p>
                   </div>
                 </div>
-
-                <label className="px-4 py-2 bg-white hover:bg-[#eaedff] text-[#000514] text-xs font-bold rounded border border-[#c5c6ce] cursor-pointer shadow-sm transition-all">
-                  <span>{isBn ? 'ফাইল সিলেক্ট করুন' : 'Choose File'}</span>
-                  <input type="file" className="hidden" onChange={handleDocUpload} />
-                </label>
               </div>
             </div>
           </div>

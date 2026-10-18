@@ -113,7 +113,7 @@ export const SuperShopPage: React.FC<SuperShopPageProps> = ({
     recordNewSaleOrder({
       orderNumber,
       customerName: checkoutName.trim() || (isBn ? 'অনলাইন সম্মানিত গ্রাহক' : 'Online Customer'),
-      customerPhone: checkoutPhone.trim() || '01700-000000',
+      customerPhone: checkoutPhone.trim() || '01700 000000',
       deliveryAddress: checkoutAddress.trim() || (isBn ? 'ঢাকা এক্সপ্রেস হোম ডেলিভারি' : 'Dhaka Express Delivery'),
       channel: 'online',
       items: saleItems,
@@ -737,7 +737,7 @@ export const SuperShopPage: React.FC<SuperShopPageProps> = ({
                     required
                     value={checkoutPhone}
                     onChange={(e) => setCheckoutPhone(e.target.value)}
-                    placeholder="01700-000000"
+                    placeholder="01700 000000"
                     className="p-2.5 rounded-lg bg-[#f2f3ff] text-xs text-[#131b2e] outline-none border border-[#eaedff] focus:border-[#745b00]"
                   />
                 </div>
@@ -1045,8 +1045,8 @@ export const SuperShopPage: React.FC<SuperShopPageProps> = ({
                 </h4>
                 <p className="text-xs text-[#44474d] leading-relaxed">
                   {isBn
-                    ? 'যেকোনো জিজ্ঞাসা ও বিশেষ অর্ডারের জন্য কল করুন: +৮৮০ ১৭৩৮-১১৪১০১ অথবা ইমেইল করুন support@unitygrowthgroup.com'
-                    : 'For wholesale or priority assistance, call hotline: +880 1738-114101 or email support@unitygrowthgroup.com'}
+                    ? 'যেকোনো জিজ্ঞাসা ও বিশেষ অর্ডারের জন্য কল করুন: 01700 000000 অথবা ইমেইল করুন support@unitygrowthgroup.com'
+                    : 'For wholesale or priority assistance, call hotline: 01700 000000 or email support@unitygrowthgroup.com'}
                 </p>
               </div>
             </div>

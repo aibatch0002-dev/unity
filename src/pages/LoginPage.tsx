@@ -56,7 +56,8 @@ export const LoginPage: React.FC<LoginPageProps> = ({
           <img
             src={UGG_LOGO_URL}
             alt="UGG Logo"
-            className="h-16 w-16 mx-auto object-contain mb-3 drop-shadow-md"
+            className="h-20 w-20 mx-auto rounded-full object-cover mb-3 shadow-lg border-2 border-amber-400/50"
+            referrerPolicy="no-referrer"
           />
           <h2 className="text-xl font-serif font-bold text-white tracking-wide">
             {isBn ? 'ইউনাইটি গ্রোথ গ্রুপ' : 'United Growth Group'}
@@ -144,7 +145,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({
             </label>
             <button
               type="button"
-              onClick={() => alert(isBn ? 'অনুগ্রহ করে হটলাইনে (+880 1711-000000) যোগাযোগ করে পিন রিসেট করুন।' : 'Please contact the secretariat hotline to reset PIN.')}
+              onClick={() => alert(isBn ? 'অনুগ্রহ করে হটলাইনে (01700 000000) যোগাযোগ করে পিন রিসেট করুন।' : 'Please contact the secretariat hotline (01700 000000) to reset PIN.')}
               className="text-amber-400 hover:underline cursor-pointer"
             >
               {isBn ? 'পিন ভুলে গেছেন?' : 'Forgot PIN?'}
@@ -170,7 +171,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({
               className="w-full py-2 bg-slate-900 hover:bg-slate-800 border border-amber-500/30 text-amber-300 text-xs rounded font-semibold cursor-pointer transition-colors flex items-center justify-center gap-1.5"
             >
               <span className="material-symbols-outlined text-sm">badge</span>
-              {isBn ? 'সদস্য ড্যাশবোর্ডে প্রবেশ (তানভীর আহমেদ)' : 'Demo Member Hub (Engr. Tanvir)'}
+              {isBn ? 'সদস্য ড্যাশবোর্ডে প্রবেশ (রহিদুল ইসলাম)' : 'Demo Member Hub (Rohidul Islam)'}
             </button>
             <button
               onClick={handleDemoAdmin}

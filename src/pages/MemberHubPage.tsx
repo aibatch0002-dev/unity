@@ -18,8 +18,8 @@ export const MemberHubPage: React.FC<MemberHubPageProps> = ({
 
   // Demo user data
   const member = {
-    nameBn: 'ইঞ্জি: তানভীর আহমেদ',
-    nameEn: 'Engr. Tanvir Ahmed',
+    nameBn: 'রহিদুল ইসলাম',
+    nameEn: 'Rohidul Islam',
     code: 'UGG-M-1048',
     categoryBn: 'আজীবন সদস্য',
     categoryEn: 'Life Member',
@@ -31,9 +31,8 @@ export const MemberHubPage: React.FC<MemberHubPageProps> = ({
     shareValue: 1250000, // ৳12,50,000
     accumulatedDividend: 231250, // ৳2,31,250
     walletBalance: 58400, // ৳58,400
-    email: 't.ahmed@investor.ugg.com',
-    phone: '+880 1712-889900',
-    nid: '5543209871124',
+    email: 'rohidul.islam@investor.ugg.com',
+    phone: '01700 000000',
   };
 
   const [slips, setSlips] = useState([
@@ -460,7 +459,8 @@ export const MemberHubPage: React.FC<MemberHubPageProps> = ({
                 <img
                   src={UGG_LOGO_URL}
                   alt="UGG Logo"
-                  className="h-16 w-16 mx-auto object-contain mb-3"
+                  className="h-20 w-20 mx-auto rounded-full object-cover mb-3 border-2 border-amber-400/60 shadow-lg"
+                  referrerPolicy="no-referrer"
                 />
                 <h2 className="text-2xl font-serif font-bold text-amber-400 tracking-wider uppercase">
                   United Growth Group (UGG)
@@ -484,11 +484,11 @@ export const MemberHubPage: React.FC<MemberHubPageProps> = ({
                 <p className="text-sm text-slate-300 leading-relaxed font-serif">
                   {isBn ? (
                     <>
-                      এতদ্বারা প্রত্যয়ন করা যাইতেছে যে, <strong className="text-amber-300 text-base">{member.nameBn}</strong>, পিতা: মো: আব্দুর রউফ, এনআইডি: {member.nid}, স্থায়ী ঠিকানা: সেক্টর-৪, উত্তরা, ঢাকা; ইউনাইটি গ্রোথ গ্রুপের গঠনতন্ত্র অনুসারে বিধিমোতাবেক নিবন্ধিত <strong className="text-white">{member.categoryBn}</strong>।
+                      এতদ্বারা প্রত্যয়ন করা যাইতেছে যে, <strong className="text-amber-300 text-base">{member.nameBn}</strong>, পিতা: মো: আব্দুর রউফ, স্থায়ী ঠিকানা: সেক্টর-৪, উত্তরা, ঢাকা; ইউনাইটি গ্রোথ গ্রুপের গঠনতন্ত্র অনুসারে বিধিমোতাবেক নিবন্ধিত <strong className="text-white">{member.categoryBn}</strong>।
                     </>
                   ) : (
                     <>
-                      This is to certify that <strong className="text-amber-300 text-base">{member.nameEn}</strong>, Father: Md. Abdur Rauf, NID: {member.nid}, Uttara, Dhaka, is a duly registered <strong className="text-white">{member.categoryEn}</strong> in good standing with the Unity Growth Group Trust.
+                      This is to certify that <strong className="text-amber-300 text-base">{member.nameEn}</strong>, Father: Md. Abdur Rauf, Uttara, Dhaka, is a duly registered <strong className="text-white">{member.categoryEn}</strong> in good standing with the Unity Growth Group Trust.
                     </>
                   )}
                 </p>
@@ -517,7 +517,7 @@ export const MemberHubPage: React.FC<MemberHubPageProps> = ({
                 <div className="pt-6 grid grid-cols-2 gap-8 text-xs font-serif text-slate-400">
                   <div className="border-t border-slate-700 pt-2">
                     <p className="font-semibold text-white">
-                      {isBn ? 'ব্যারিস্টার তৌফিক এলাহী' : "Barrister Toufiq Elahi (Lincoln's Inn)"}
+                      {isBn ? 'রহিদুল ইসলাম' : 'Rohidul Islam'}
                     </p>
                     <p className="text-[11px]">
                       {isBn ? 'সিনিয়র লিগ্যাল কনসালট্যান্ট ও কমপ্লায়েন্স প্রধান' : 'Senior Legal Counsel & Compliance Head'}
@@ -525,7 +525,7 @@ export const MemberHubPage: React.FC<MemberHubPageProps> = ({
                   </div>
                   <div className="border-t border-slate-700 pt-2">
                     <p className="font-semibold text-white">
-                      {isBn ? 'মো: হাফিজুর রহমান' : 'Md. Hafizur Rahman'}
+                      {isBn ? 'রহিদুল ইসলাম' : 'Rohidul Islam'}
                     </p>
                     <p className="text-[11px]">
                       {isBn ? 'ব্যবস্থাপনা পরিচালক, ইউজিজি বোর্ড' : 'Managing Director, UGG Board'}

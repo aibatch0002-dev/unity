@@ -1,13 +1,12 @@
 import { Member, Project, Product, GalleryAlbum, RepositoryDoc } from '../types';
 
-export const UGG_LOGO_URL =
-  'https://lh3.googleusercontent.com/aida/AEtjO1WbivogJEy-V4nxfsb6CMV1tQOvWQgDha-DNuzFEmi2IwZHPdg-cNuMP9Nwku7ay6bnYJpBrGQWrg6kDAWkrWpcd9JY7rRlzmjWVyQH4_GZxsEdeWuqQwr3wZj5CRnfYajuVsjrUkdTqGErK9d0VvyWyYUz9lDsW0Sjgitnu0amXqLNcnCdAhNBAB7or_3ytEytcd_Le5SdJLKOEoPR58RSLF8fcGZ9ofHXzMKpw47Uy0avChCC38CnJ1Q';
+export const UGG_LOGO_URL = '/ugg-logo.jpg';
 
 export const HERO_BG_IMAGE =
   'https://lh3.googleusercontent.com/aida-public/AB6AXuC2gMGDEtYGkwa8I3UqN6RH2WTPkOR_jBJH4Ai6cVqqgboCC9zR7hAhbJve3DI07hbxloWIlc7sdw204INIze3vMxs-5ofWLMjjkUYSVLsKpTJffoH_UaC37QjxhKvZZG9Qn2MW9h7b1e1KXCwMyn7XWj30JtWOulHjFwxxh3db8RZg6ykJHK_ri1sFTJEtKnYuv-d09svc20nixS1RNedDlfVgzdVkCk3g7lX3cuxX98IjjTmlZz31';
 
 export const BOARDROOM_MEETING_IMAGE =
-  'https://lh3.googleusercontent.com/aida/AEtjO1WDOSseVBOcgp5nHEOfDzkxWkAIsV2Mzusl1Pc4cW9foCK-s7dzKV6RgN_A0GBDys4u6z4L7HWACLQHW3-EtSPtLJULCgyXwaHrzbP7Nens0xQiFkxmMceGA2zuE-dXZ2wp-V05NqO-IcDx0_L9_ysjHRIigIPzx0ipXes_Cla3rU5omKnwnGXJ_ZsFW7ZJwpGWTbMzSGG8T98YTqcqqGFMlwZfkO2ZyWPFq8qHdFmJ7REzEXWmzuQACms';
+  'https://lh3.googleusercontent.com/aida-public/AB6AXuAZ2FqpD1WKKHJ6dvgYrAxN05qUu40OKIRqFXhmlXQm_fjCLpvKabtJ0Jspl1W5iWLQljHiumoV_cJ7m9uyxrlC7npRstrdtE80xYvDyMD3Ag3Zy3k8IOIh6p8_iJ64Yorma4vIYKHaaKJzkhTnnScHFgag6gVT2upOxMAy8Cfa0zZJSLjP_AhQ8NoVw3q9dfx4kF3ekB18WRnEFFMPABOYnAq_1y4OBgmJEZs9YKd0OnNOq_9JzB4_';
 
 export const AGRO_PARK_HERO_IMAGE =
   'https://lh3.googleusercontent.com/aida-public/AB6AXuBWfNHMuAHJ-u7p9y8Dupq53NCOjMGeId9WqxfFRSp3xgkTrvAONxXmjT0HoflDhMDdkgFU7JgntFWKPKSZbF5fe6kPeILODWDA7MJb_utdU5nl9uXaRr9ll9BP5Z9JUV2fpEWyJjoxQsC61wRJz1Jtx33LHcFhyvIHTDqCEYhbC3i2WWlWwfH9dNHNBIiUIkEgaBAGPPm88267ZWkE6OMPVPh9qGFcmJefLpYbDlS6Noqi8Mjb_MwK';
@@ -32,8 +31,8 @@ export function toBanglaNumber(num: number | string): string {
 export const membersData: Member[] = [
   {
     id: 'UGG-M-1001',
-    nameBn: 'মো: হাফিজুর রহমান',
-    nameEn: 'Sharif Morshed, FCMA',
+    nameBn: 'রহিদুল ইসলাম',
+    nameEn: 'Rohidul Islam',
     roleBn: 'ব্যবস্থাপনা পরিচালক ও প্রধান বিনিয়োগ কৌশলবিদ',
     roleEn: 'Managing Director & Chief Investment Strategist',
     category: 'founder',
@@ -55,8 +54,8 @@ export const membersData: Member[] = [
   },
   {
     id: 'UGG-M-1024',
-    nameBn: 'মো: ফরহাদ হোসেন',
-    nameEn: 'Dr. Rehnuma Ferdous, PhD',
+    nameBn: 'রহিদুল ইসলাম',
+    nameEn: 'Rohidul Islam',
     roleBn: 'চিফ টেকনোলজি অ্যাডভাইজার ও এন্টারপ্রেনার',
     roleEn: 'Chief Technology Advisor & Entrepreneur',
     category: 'life',
@@ -78,8 +77,8 @@ export const membersData: Member[] = [
   },
   {
     id: 'UGG-M-1008',
-    nameBn: 'মো: মিজানুর রহমান',
-    nameEn: "Barrister Toufiq Elahi (Lincoln's Inn)",
+    nameBn: 'রহিদুল ইসলাম',
+    nameEn: 'Rohidul Islam',
     roleBn: 'সিনিয়র লিগ্যাল কনসালট্যান্ট, সুপ্রিম কোর্ট',
     roleEn: 'Senior Legal Consultant, Supreme Court',
     category: 'advisor',
@@ -101,8 +100,8 @@ export const membersData: Member[] = [
   },
   {
     id: 'UGG-M-1089',
-    nameBn: 'হাসান',
-    nameEn: 'Kazi Tanvir Hasan',
+    nameBn: 'রহিদুল ইসলাম',
+    nameEn: 'Rohidul Islam',
     roleBn: 'ম্যানেজিং পার্টনার, গ্রিন ভ্যালি এগ্রো',
     roleEn: 'Managing Partner, Green Valley Agro',
     category: 'general',
@@ -124,8 +123,8 @@ export const membersData: Member[] = [
   },
   {
     id: 'UGG-M-1033',
-    nameBn: 'মো: মিজানুর রহমান',
-    nameEn: 'Prof. Dr. Sabrina Jahan, MBBS, FCPS',
+    nameBn: 'রহিদুল ইসলাম',
+    nameEn: 'Rohidul Islam',
     roleBn: 'বিভাগীয় প্রধান ও সমাজসেবক',
     roleEn: 'Head of Department & Social Reformer',
     category: 'life',
@@ -147,8 +146,8 @@ export const membersData: Member[] = [
   },
   {
     id: 'UGG-M-1004',
-    nameBn: 'মো: ফরহাদ হোসেন',
-    nameEn: 'Mahmudul Karim, MBA',
+    nameBn: 'রহিদুল ইসলাম',
+    nameEn: 'Rohidul Islam',
     roleBn: 'অপারেশনস হেড, ইউজিজি গ্রোসারিজ',
     roleEn: 'Operations Head, UGG Groceries',
     category: 'founder',
@@ -187,7 +186,7 @@ export const projectsData: Project[] = [
     budgetTotalBn: '৳৩,৫০,০০,০০০',
     budgetSpentBn: '৳২,৭৩,০০,০০০',
     expectedRoiBn: '১৪.৫% - ১৮%',
-    teamLeadBn: 'মো: হাফিজুর রহমান',
+    teamLeadBn: 'রহিদুল ইসলাম',
     teamLeadRoleBn: 'প্রকল্প পরিচালক ও প্রধান কৃষি প্রযুক্তিবিদ',
     imageUrl: AGRO_PARK_HERO_IMAGE,
     locationBn: 'রাজশাহী কৃষি জোন',
@@ -215,7 +214,7 @@ export const projectsData: Project[] = [
     budgetTotalBn: '৳২,৮০,০০,০০০',
     budgetSpentBn: '৳২,৫৮,০০,০০০',
     expectedRoiBn: '১৫.২% - ১৮.৫%',
-    teamLeadBn: 'মো: মিজানুর রহমান',
+    teamLeadBn: 'রহিদুল ইসলাম',
     teamLeadRoleBn: 'পরিচালক (রিটেইল অপারেশন্স)',
     imageUrl: SUPER_SHOP_AISLE_IMAGE,
     locationBn: 'উপশহর, রাজশাহী ও উত্তরা ঢাকা',
@@ -242,7 +241,7 @@ export const projectsData: Project[] = [
     budgetTotalBn: '৳৪,২০,০০,০০০',
     budgetSpentBn: '৳২,৬৮,৮০,০০০',
     expectedRoiBn: '১৩.৫% - ১৬.২%',
-    teamLeadBn: 'প্রকৌশলী এস. এম. রফিক',
+    teamLeadBn: 'রহিদুল ইসলাম',
     teamLeadRoleBn: 'কোল্ড চেইন স্পেশালিস্ট',
     imageUrl:
       'https://lh3.googleusercontent.com/aida-public/AB6AXuB3LJSjwNkTNvVutGmYH_iRR_o_y5T6loZQkrpwUtwnvKsDr365ewrM8iTP44yACVQH3bwv3kKZ-idFhCNcVF6rjtdq4jGreuVbgVofLylP5KLd7Ld8qSzRpEP0m1uFNg-oCd6KjT6tWpxGPiLsJ0XJcNrxBoP7uGatG5TMNpn2-MILrkAv_MlYULo5nYEnrxGov6_zmx8_GfHSsq9UaAkK2uEBGSTnrVXnnIe7ePSPTCOY8KyWIdik',
@@ -270,7 +269,7 @@ export const projectsData: Project[] = [
     budgetTotalBn: '৳২,৮০,০০,০০০',
     budgetSpentBn: '৳১৫,০০,০০০',
     expectedRoiBn: 'সমীক্ষা শেষ হলে ধার্য হবে',
-    teamLeadBn: 'হাসান (সিটিও)',
+    teamLeadBn: 'রহিদুল ইসলাম (সিটিও)',
     teamLeadRoleBn: 'প্রধান প্রযুক্তি আর্কিটেক্ট',
     imageUrl: RECEPTION_LOUNGE_IMAGE,
     locationBn: 'হাই-টেক পার্ক জোন',
@@ -295,7 +294,7 @@ export const projectsData: Project[] = [
     budgetTotalBn: '৳১,৫০,০০,০০০',
     budgetSpentBn: '৳১,৫০,০০,০০০',
     expectedRoiBn: 'প্রদত্ত মোট লভ্যাংশ: ৳৩৮,৪০,০০০',
-    teamLeadBn: 'মো: হাফিজুর রহমান',
+    teamLeadBn: 'রহিদুল ইসলাম',
     teamLeadRoleBn: 'এগ্রো প্রকল্প চেয়ার',
     imageUrl:
       'https://lh3.googleusercontent.com/aida-public/AB6AXuD86Mn121fSUbxRMt-OaCoUzZvay4rP2-JmoK-86mhFWRtNmV-EG0xja5zuGQge_gddkFxrs1stoymfAiFXTPAeZWZkVC977kU_wlQILcMuCc1KO3lk592Lyv-k5fagfmtE1v2hfjyMN3kg8vVTGdt-f2PL6FTokqvm8lH1YPDkVH3PWI6pkJMGB0ynpbadghvs3B9M1KEl_AjLQiiBdAPoUAoACSbOF4ZXP5VEOgofmDTEYvHXaLhk',
@@ -318,7 +317,7 @@ export const projectsData: Project[] = [
     budgetTotalBn: '৳১,২০,০০,০০০',
     budgetSpentBn: '৳১,২০,০০,০০০',
     expectedRoiBn: 'সচল পরিচালন মার্জিন',
-    teamLeadBn: 'মো: মিজানুর রহমান',
+    teamLeadBn: 'রহিদুল ইসলাম',
     teamLeadRoleBn: 'পরিচালক',
     imageUrl: UTTARA_HQ_MAP_IMAGE,
     locationBn: 'উপশহর, রাজশাহী',
@@ -728,8 +727,8 @@ export const repositoryDocsData: RepositoryDoc[] = [
     badgeType: 'official',
     accessLevelBn: 'উন্মুক্ত ফর্ম',
     accessLevelEn: 'Open to All Members',
-    detailsBn: 'প্রয়োজনীয় সংযুক্তি: মূল মেম্বারশিপ সার্টিফিকেট ও এনআইডি কপি।',
-    detailsEn: 'Mandatory attachments: Original membership certificate copy and verified NID paperwork.',
+    detailsBn: 'প্রয়োজনীয় সংযুক্তি: মূল মেম্বারশিপ সার্টিফিকেট কপি।',
+    detailsEn: 'Mandatory attachments: Original membership certificate copy and verified membership paperwork.',
   },
   {
     id: 'doc-6',

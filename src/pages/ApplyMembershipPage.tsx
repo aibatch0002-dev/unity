@@ -39,6 +39,11 @@ export const ApplyMembershipPage: React.FC<ApplyMembershipPageProps> = ({
           </p>
 
           <div className="mt-6 flex flex-wrap gap-4 items-center text-xs text-slate-400 font-mono">
+            <span className="flex items-center gap-1.5 text-emerald-300 bg-emerald-950/60 border border-emerald-500/30 px-2.5 py-1 rounded">
+              <span className="material-symbols-outlined text-sm text-emerald-400">check_circle</span>
+              {isBn ? 'এনআইডি / পাসপোর্ট / জন্ম নিবন্ধন (ঐচ্ছিক)' : 'NID / Passport / Birth Reg (Optional)'}
+            </span>
+            <span className="text-slate-700">•</span>
             <span className="flex items-center gap-1.5 text-amber-300">
               <span className="material-symbols-outlined text-sm">verified_user</span>
               {isBn ? 'সমবায় অধিদপ্তর আইন দ্বারা সুরক্ষিত' : 'Protected under Co-operative Societies Act'}
@@ -46,7 +51,7 @@ export const ApplyMembershipPage: React.FC<ApplyMembershipPageProps> = ({
             <span className="text-slate-700">•</span>
             <span className="flex items-center gap-1.5 text-slate-300">
               <span className="material-symbols-outlined text-sm">schedule</span>
-              {isBn ? 'আনুমানিক পূরণ সময়: ৮-১০ মিনিট' : 'Estimated completion: 8-10 mins'}
+              {isBn ? 'আনুমানিক পূরণ সময়: ৫-৭ মিনিট' : 'Estimated completion: 5-7 mins'}
             </span>
             <span className="text-slate-700">•</span>
             <button
@@ -54,7 +59,7 @@ export const ApplyMembershipPage: React.FC<ApplyMembershipPageProps> = ({
               className="text-amber-400 hover:underline cursor-pointer flex items-center gap-1"
             >
               <span className="material-symbols-outlined text-sm">people</span>
-              {isBn ? 'বিদ্যমান সদস্য ডিরেক্টরি দেখুন' : 'Explore Member Directory'}
+              {isBn ? 'সদস্য ডিরেক্টরি' : 'Member Directory'}
             </button>
           </div>
         </div>

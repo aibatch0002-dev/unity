@@ -31,7 +31,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ language }) => {
       nameEn: 'Corporate Headquarters (Uttara)',
       addressBn: 'হাউস # ২৪, রোড # ১১, সেক্টর # ০৪, উত্তরা, ঢাকা-১২৩০',
       addressEn: 'House # 24, Road # 11, Sector # 04, Uttara, Dhaka-1230',
-      phones: ['+880 1711-000000', '+880 2-8899770'],
+      phones: ['01700 000000'],
       email: 'hq@unitygrowthgroup.com',
       hoursBn: 'শনিবার - বৃহস্পতিবার: সকাল ৯:০০ - সন্ধ্যা ৬:০০ (শুক্রবার বন্ধ)',
       hoursEn: 'Saturday - Thursday: 9:00 AM - 6:00 PM (Friday Closed)',
@@ -43,7 +43,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ language }) => {
       nameEn: 'Gulshan Executive Lounge & Legal Chamber',
       addressBn: 'লেভেল ৭, প্লট ১৪, বীর উত্তম মীর শওকত সড়ক, গুলশান-১, ঢাকা-১২১২',
       addressEn: 'Level 7, Plot 14, Bir Uttam Mir Shawkat Sarak, Gulshan-1, Dhaka-1212',
-      phones: ['+880 1894-920200', '+880 2-9844332'],
+      phones: ['01700 000000'],
       email: 'gulshan@unitygrowthgroup.com',
       hoursBn: 'রবিবার - বৃহস্পতিবার: সকাল ১০:০০ - রাত ৮:০০',
       hoursEn: 'Sunday - Thursday: 10:00 AM - 8:00 PM',
@@ -55,7 +55,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ language }) => {
       nameEn: 'Bogura Regional Operations & Agro Cold-Hub',
       addressBn: 'শেরপুর রোড, বনানী মোড় সংলগ্ন, বগুড়া সদর, বগুড়া-৫৮০০',
       addressEn: 'Sherpur Road, Adjacent to Banani Mor, Bogura Sadar, Bogura-5800',
-      phones: ['+880 1713-445566'],
+      phones: ['01700 000000'],
       email: 'agro.bogura@unitygrowthgroup.com',
       hoursBn: 'শনিবার - বৃহস্পতিবার: সকাল ৮:০০ - বিকাল ৫:০০',
       hoursEn: 'Saturday - Thursday: 8:00 AM - 5:00 PM',
@@ -68,8 +68,8 @@ export const ContactPage: React.FC<ContactPageProps> = ({ language }) => {
     {
       qBn: 'ইউনাইটি গ্রোথ গ্রুপ (UGG)-এর সদস্যপদ লাভের প্রক্রিয়া কী?',
       qEn: 'What is the process to obtain UGG membership?',
-      aBn: 'অনলাইনে আমাদের ৭-ধাপের আবেদন ফরম পূরণ করে জাতীয় পরিচয়পত্র, নমিনির তথ্য এবং ন্যূনতম ৫টি শেয়ার (প্রতি শেয়ার ৳১০,০০০) ক্রয়ের অঙ্গীকার জমা দিতে হয়। পরিচালনা পর্ষদের যাচাই-বাছাই ও স্বাক্ষরের পর ৩ কার্যদিবসের মধ্যে অফিসিয়াল সদস্য সনদ ও মেম্বার পোর্টাল এক্সেস প্রদান করা হয়।',
-      aEn: 'Fill out our 7-step online application with NID, nominee details, and commitment for minimum 5 shares (BDT 10,000 per share). Following verification by board, official certificates and portal access are granted in 3 business days.',
+      aBn: 'অনলাইনে আমাদের আবেদন ফরম পূরণ করে নমিনির তথ্য এবং ন্যূনতম ৫টি শেয়ার (প্রতি শেয়ার ৳১০,০০০) ক্রয়ের অঙ্গীকার জমা দিতে হয়। পরিচালনা পর্ষদের যাচাই-বাছাই ও স্বাক্ষরের পর ৩ কার্যদিবসের মধ্যে অফিসিয়াল সদস্য সনদ ও মেম্বার পোর্টাল এক্সেস প্রদান করা হয়।',
+      aEn: 'Fill out our online application with nominee details and commitment for minimum 5 shares (BDT 10,000 per share). Following verification by board, official certificates and portal access are granted in 3 business days.',
     },
     {
       qBn: 'লভ্যাংশ কখন এবং কিভাবে বণ্টন করা হয়?',
@@ -272,7 +272,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ language }) => {
                     required
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    placeholder={isBn ? 'যেমন: মোহাম্মদ আরিফুর রহমান' : 'e.g. John Doe'}
+                    placeholder={isBn ? 'যেমন: রহিদুল ইসলাম' : 'e.g. Rohidul Islam'}
                     className="w-full bg-[#020714] border border-slate-800 focus:border-amber-400 rounded-lg px-3.5 py-2.5 text-white outline-none"
                   />
                 </div>
@@ -287,7 +287,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ language }) => {
                       required
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      placeholder="01XXXXXXXXX"
+                      placeholder="01700 000000"
                       className="w-full bg-[#020714] border border-slate-800 focus:border-amber-400 rounded-lg px-3.5 py-2.5 text-white outline-none font-mono"
                     />
                   </div>

@@ -828,11 +828,11 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, language }) => {
 
               <div className="flex items-center gap-3 mt-6 pt-3 border-t border-[#eaedff]">
                 <div className="w-10 h-10 rounded-full bg-[#0d1e3a] text-white flex items-center justify-center font-bold text-sm">
-                  হা
+                  {isBn ? 'র' : 'R'}
                 </div>
                 <div>
                   <div className="text-xs sm:text-sm font-serif font-bold text-[#000514] tracking-wide">
-                    {isBn ? 'মোঃ হাফিজুর রহমান' : 'Md. Hafizur Rahman'}
+                    {isBn ? 'রহিদুল ইসলাম' : 'Rohidul Islam'}
                   </div>
                   <div className="text-[11px] text-[#75777e]">
                     {isBn ? 'প্রতিষ্ঠাতা সদস্য (সদস্য নং ০০১৮)' : 'Founder Member (ID: UGG-M-1001)'}
@@ -860,11 +860,11 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, language }) => {
 
               <div className="flex items-center gap-3 mt-6 pt-3 border-t border-white/10">
                 <div className="w-10 h-10 rounded-full bg-[#fcd358] text-[#735a00] flex items-center justify-center font-bold text-sm">
-                  ফ
+                  {isBn ? 'র' : 'R'}
                 </div>
                 <div>
                   <div className="text-xs sm:text-sm font-serif font-bold text-white tracking-wide">
-                    {isBn ? 'মোঃ ফরহাদ হোসেন' : 'Md. Farhad Hossain'}
+                    {isBn ? 'রহিদুল ইসলাম' : 'Rohidul Islam'}
                   </div>
                   <div className="text-[11px] text-[#b7c7eb]">
                     {isBn ? 'চেয়ারপার্সন, নির্বাহী পর্ষদ' : 'Chairperson, Executive Council'}
@@ -892,11 +892,11 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, language }) => {
 
               <div className="flex items-center gap-3 mt-6 pt-3 border-t border-[#eaedff]">
                 <div className="w-10 h-10 rounded-full bg-[#0d1e3a] text-white flex items-center justify-center font-bold text-sm">
-                  {isBn ? 'আ' : 'A'}
+                  {isBn ? 'র' : 'R'}
                 </div>
                 <div>
                   <div className="text-xs font-bold text-[#000514]">
-                    {isBn ? 'আরিফ হাসান চৌধুরী' : 'Arif Hasan Chowdhury'}
+                    {isBn ? 'রহিদুল ইসলাম' : 'Rohidul Islam'}
                   </div>
                   <div className="text-[11px] text-[#75777e]">
                     {isBn ? 'বাণিজ্যিক বিনিয়োগ অংশীদার' : 'Institutional Investment Partner'}

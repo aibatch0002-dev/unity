@@ -564,7 +564,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, language }) =>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Chairman: মো: হাফিজুর রহমান (Md. Hafizur Rahman) */}
+            {/* Chairman: রহিদুল ইসলাম (Rohidul Islam) */}
             <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between border border-[#eaedff]">
               <div>
                 <div className="flex items-center gap-4 mb-4">
@@ -576,7 +576,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, language }) =>
                       {isBn ? 'চেয়ারম্যান' : 'Chairman'}
                     </span>
                     <h3 className="font-serif text-base font-bold text-[#000514] mt-1">
-                      {isBn ? 'মো: হাফিজুর রহমান' : 'Md. Hafizur Rahman'}
+                      {isBn ? 'রহিদুল ইসলাম' : 'Rohidul Islam'}
                     </h3>
                     <p className="text-xs text-[#75777e]">
                       {isBn ? 'সাবেক ব্যাংকার ও সিনিয়র উদ্যোক্তা' : 'Former Banker & Senior Entrepreneur'}
@@ -595,7 +595,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, language }) =>
               </div>
             </div>
 
-            {/* Managing Director: মো: ফরহাদ হোসেন (Md. Farhad Hossain) */}
+            {/* Managing Director: রহিদুল ইসলাম (Rohidul Islam) */}
             <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between border border-[#eaedff]">
               <div>
                 <div className="flex items-center gap-4 mb-4">
@@ -607,7 +607,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, language }) =>
                       {isBn ? 'ব্যবস্থাপনা পরিচালক' : 'Managing Director'}
                     </span>
                     <h3 className="font-serif text-base font-bold text-[#000514] mt-1">
-                      {isBn ? 'মো: ফরহাদ হোসেন' : 'Md. Farhad Hossain'}
+                      {isBn ? 'রহিদুল ইসলাম' : 'Rohidul Islam'}
                     </h3>
                     <p className="text-xs text-[#75777e]">
                       {isBn ? 'সাপ্লাই চেইন ও শিল্পখাত বিশেষজ্ঞ' : 'Supply Chain & Industrial Operations'}
@@ -626,7 +626,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, language }) =>
               </div>
             </div>
 
-            {/* Chief Financial Advisor: মো: তানভীর আহমেদ (Md. Tanvir Ahmed, FCA) */}
+            {/* Chief Financial Advisor: রহিদুল ইসলাম (Rohidul Islam, FCA) */}
             <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between border border-[#eaedff]">
               <div>
                 <div className="flex items-center gap-4 mb-4">
@@ -638,7 +638,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, language }) =>
                       {isBn ? 'প্রধান আর্থিক উপদেষ্টা' : 'Chief Financial Advisor'}
                     </span>
                     <h3 className="font-serif text-base font-bold text-[#000514] mt-1">
-                      {isBn ? 'মো: তানভীর আহমেদ' : 'Md. Tanvir Ahmed, FCA'}
+                      {isBn ? 'রহিদুল ইসলাম' : 'Rohidul Islam, FCA'}
                     </h3>
                     <p className="text-xs text-[#75777e]">
                       {isBn ? 'চার্টার্ড অ্যাকাউন্ট্যান্ট (ICAB)' : 'Chartered Accountant (ICAB)'}
@@ -669,7 +669,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, language }) =>
                       {isBn ? 'আইনি উপদেষ্টা' : 'Legal Counsel'}
                     </span>
                     <h3 className="font-serif text-base font-bold text-[#000514] mt-1">
-                      {isBn ? 'ব্যারিস্টার তৌফিক এলাহী' : "Barrister Toufiq Elahi (Lincoln's Inn)"}
+                      {isBn ? 'রহিদুল ইসলাম' : 'Rohidul Islam'}
                     </h3>
                     <p className="text-xs text-[#75777e]">
                       {isBn ? 'অ্যাডভোকেট, বাংলাদেশ সুপ্রিম কোর্ট' : 'Advocate, Supreme Court of Bangladesh'}
@@ -700,7 +700,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, language }) =>
                       {isBn ? 'চিফ টেকনোলজি অফিসার' : 'Chief Technology Officer'}
                     </span>
                     <h3 className="font-serif text-base font-bold text-[#000514] mt-1">
-                      {isBn ? 'কাজী তানভীর হাসান' : 'Kazi Tanvir Hasan'}
+                      {isBn ? 'রহিদুল ইসলাম' : 'Rohidul Islam'}
                     </h3>
                     <p className="text-xs text-[#75777e]">
                       {isBn ? 'বিএসসি ইন সিএসই (বুয়েট)' : 'B.Sc in CSE (BUET)'}

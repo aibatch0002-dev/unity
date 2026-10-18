@@ -16,11 +16,12 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, language }) => {
         {/* Column 1 & 2: Brand Lockup & Mission */}
         <div className="lg:col-span-2 flex flex-col gap-4">
           <div className="flex items-center gap-3">
-            <div className="p-1.5 bg-white rounded shadow-sm">
+            <div className="p-0.5 bg-amber-400/20 rounded-full shadow-sm border border-amber-400/40">
               <img
                 src={UGG_LOGO_URL}
                 alt="UNITY GROWTH GROUP Official Logo"
-                className="h-8 w-auto object-contain"
+                className="h-9 w-9 rounded-full object-cover"
+                referrerPolicy="no-referrer"
               />
             </div>
             <span className="font-serif text-xl text-white font-bold tracking-tight">
@@ -211,7 +212,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, language }) => {
               <span className="material-symbols-outlined text-[16px] text-[#ffe08b] flex-shrink-0">
                 call
               </span>
-              <span>+৮৮০ ১৭৩৮-১১৪১০১, 01722731944</span>
+              <span>01700 000000</span>
             </p>
             <p className="flex items-center gap-1.5">
               <span className="material-symbols-outlined text-[16px] text-[#ffe08b] flex-shrink-0">

@@ -119,7 +119,7 @@ export const SuperShopAdminPanel: React.FC<SuperShopAdminPanelProps> = ({
 
     const newOrder = recordNewSaleOrder({
       customerName: posCustomerName.trim() || (isBn ? 'কাউন্টার ওয়াক-ইন ক্রেতা' : 'Counter Walk-in Customer'),
-      customerPhone: posCustomerPhone.trim() || '01700-000000',
+      customerPhone: posCustomerPhone.trim() || '01700 000000',
       deliveryAddress: isBn ? 'সুপার শপ কাউন্টার সরাসরি বিক্রয়' : 'Super Shop Counter Direct POS',
       channel: 'counter-pos',
       items: [
@@ -179,7 +179,7 @@ export const SuperShopAdminPanel: React.FC<SuperShopAdminPanelProps> = ({
 
     const simulatedOrder = recordNewSaleOrder({
       customerName: isBn ? 'অনলাইন ক্রেতা (সিমুলেশন)' : 'Online Customer (Simulation)',
-      customerPhone: '01712-334455',
+      customerPhone: '01700 000000',
       deliveryAddress: isBn ? 'উত্তরা সেক্টর ১১, ঢাকা' : 'Sector 11, Uttara, Dhaka',
       channel: 'online',
       items,
@@ -703,7 +703,7 @@ export const SuperShopAdminPanel: React.FC<SuperShopAdminPanelProps> = ({
                   </label>
                   <input
                     type="text"
-                    placeholder="017XX-XXXXXX"
+                    placeholder="01700 000000"
                     value={posCustomerPhone}
                     onChange={(e) => setPosCustomerPhone(e.target.value)}
                     className="p-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs focus:border-amber-400 outline-none"
@@ -917,7 +917,7 @@ export const SuperShopAdminPanel: React.FC<SuperShopAdminPanelProps> = ({
             {/* Header */}
             <div className="flex items-center justify-between border-b border-slate-200 pb-3">
               <div className="flex items-center gap-2">
-                <img src={UGG_LOGO_URL} alt="UGG" className="w-8 h-8 rounded-full object-cover" />
+                <img src={UGG_LOGO_URL} alt="UGG" className="w-8 h-8 rounded-full object-cover border border-amber-500/40" referrerPolicy="no-referrer" />
                 <div>
                   <h4 className="font-serif font-bold text-sm text-slate-900 leading-tight">
                     {isBn ? 'ইউজিজি সুপার শপ ও ফ্রেশ মার্ট' : 'UGG Super Shop & Fresh Mart'}
